@@ -1,0 +1,27 @@
+﻿<Window x:Class="TextFileReader.TextReader"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextFileReader"
+        mc:Ignorable="d"
+        Title="TextReader" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <RichTextBox Name="ReaderText" Margin="10,10,10,50">
+            <UIElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </UIElement.RenderTransform>
+            <FlowDocument>
+                <Paragraph>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button Name="SaveText"  Content="Сохранить и выйти" HorizontalContentAlignment="Center" Margin="10,382,405,0" VerticalAlignment="Top" Height="24" Click="SaveText_Click"/>
+        <Button Name="Exit" Content="Выйти без сохранения" HorizontalContentAlignment="Center" Margin="400,382,10,0" VerticalAlignment="Top" Height="24" Click="Exit_Click"/>
+    </Grid>
+</Window>

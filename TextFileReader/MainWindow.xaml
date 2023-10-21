@@ -1,0 +1,18 @@
+﻿<Window x:Class="TextFileReader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextFileReader"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="463" Width="809">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="799*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Открыть новый файл" HorizontalContentAlignment="Center" Margin="10,382,14,0" VerticalAlignment="Top" Height="24" Click="Button_Click"/>
+        <Label Content="История последних открытых файлов" HorizontalContentAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="30" Width="780"/>
+        <ListBox Name="ListView" Margin="10,60,14,70" MouseDoubleClick="ListView_MouseDoubleClick"/>
+    </Grid>
+</Window>
